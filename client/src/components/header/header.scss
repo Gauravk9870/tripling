@@ -1,0 +1,180 @@
+.header {
+  height: 100vh;
+
+  background: url("../../assests/images/BG2.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hContainer {
+    width: 100%;
+    padding: 0px 40px;
+
+    .hContent {
+      margin-top: 100px;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .hTitle {
+        font-size: 50px;
+        font-weight: 400;
+      }
+    }
+
+    .hButton {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .exploreNow {
+        width: fit-content;
+        border: none;
+        text-transform: capitalize;
+        background-color: transparent;
+        font-size: 18px;
+      }
+
+      .hIcon {
+        font-size: 18px;
+      }
+    }
+
+    .search {
+      margin-top: 50px;
+      position: relative;
+
+      .hCategory {
+        display: flex;
+        width: fit-content;
+
+        .hCategoryItem {
+          display: flex;
+          gap: 10px;
+          flex: 1;
+          padding: 10px 30px;
+          background-color: #111111;
+          // border: 1px solid #111;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        .hCategoryItem.active {
+          background-color: #fff;
+          color: #111;
+        }
+      }
+
+      .hSearchDetails {
+        background-color: #fff;
+        height: 150px;
+        
+
+        .searchHotels {
+          padding: 30px 20px;
+          display: flex;
+          gap: 10px;
+          height: 100%;
+          max-height: 100%;
+
+          .hSearchItem {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            padding: 10px;
+
+            .date{
+              position: absolute;
+              top: 140px;
+              z-index: 2;
+          }
+
+          .searchText{
+            color: #222;
+          }
+            
+
+            label {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+            }
+            .searchInput {
+              border: none;
+              height: 30px;
+              // width: 80%;
+              outline: none;
+              
+            }
+
+            .options{
+              z-index: 2;
+                position: absolute;
+                top: 140px;
+                background-color: white;
+                color: gray;
+                border-radius: 5px;
+                -webkit-box-shadow:0px 0px 10px -5px rgba(0,0,0,0.4);
+                box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.4);
+
+                .optionItem{
+                    width: 200px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px;
+
+                    
+
+                    .optionCounter{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-size: 12px;
+                        color: #111;
+
+                        .optionCounterButton{
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #0071c2;
+                            color: #0071c2;
+                            cursor: pointer;
+                            background-color: #fff;
+
+                            &:disabled{
+                              cursor: not-allowed;
+                            }
+
+                        }
+
+
+                    }
+                }
+            }
+          }
+        }
+      }
+
+      .hSearchBtn {
+        .btn {
+          position: absolute;
+          background-color: #111;
+          border: none;
+          color: #fff;
+          padding: 10px 30px;
+          bottom: -10px;
+          right: -10px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
